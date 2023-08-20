@@ -1,0 +1,146 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-image: url(./img/Background-login.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 120px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.a-nav {
+  position: relative;
+  padding: 0 0.1rem;
+}
+
+.a-nav::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(248, 214, 145);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.a-nav:hover::after {
+  width: 100%;
+}
+
+.register-btn {
+  background-color: #f2d76c;
+  border-radius: 20px;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: white;
+  color: rgb(248, 214, 145);
+  transition: 0.5s;
+}
+
+.navegation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.login > .login-status {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.login-form {
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 20px;
+  width: 40rem;
+  padding-right: 5rem;
+}
+
+.login-form > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+p {
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 5px;
+}
+
+[name=submit] {
+  cursor: pointer;
+  width: 15rem;
+  height: 3rem;
+  background-color: #ffea97;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding-left: 3rem;
+}
+
+.pp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vp;
+  gap: 1.6rem;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.footer-a {
+  display: flex;
+  gap: 5rem;
+}
+
+.footer-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
